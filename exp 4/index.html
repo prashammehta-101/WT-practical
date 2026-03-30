@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="file:///C:/Users/ARIHANT/Downloads/sun-sets-behind-mountain-ranges-600nw-2479236003.webp" onclick="openSlide(0)">
+        <img src="https://res.cloudinary.com/dyzqphxse/image/upload/v1774856291/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640_iqjhzs.avif" onclick="openSlide(1)">
+        <img src="https://res.cloudinary.com/dyzqphxse/image/upload/v1774856311/image-optimisation-scaled_kq4nqd.jpg" onclick="openSlide(2)">
+        <img src="https://res.cloudinary.com/dyzqphxse/image/upload/v1774856319/istockphoto-814423752-612x612_efghqs.jpg" onclick="openSlide(3)">
+        <img src="https://res.cloudinary.com/dyzqphxse/image/upload/v1774856320/ZiClJf-1920w_eguz9c.jpg" onclick="openSlide(4)">
+        <img src="https://res.cloudinary.com/dyzqphxse/image/upload/v1774856289/images_oxfs5f.jpg" onclick="openSlide(5)">
+    </div>
+
+    <!-- Slideshow Modal -->
+    <div class="slider" id="slider">
+        <span class="close" onclick="closeSlide()">&times;</span>
+        <img id="slideImg">
+        <button class="prev" onclick="changeSlide(-1)">Prev</button>
+        <button class="next" onclick="changeSlide(1)">Next</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
